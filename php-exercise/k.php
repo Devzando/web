@@ -1,16 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-    <title>Leitura de Frase</title>
+    <meta charset="UTF-8">
+    <title>Questão J</title>
+    <link rel="stylesheet" href="questoes.css">
 </head>
+
 <body>
+    <h1>Resposta da Questão</h1>
     <form method="post" action="./k.php">
         <label for="frase">Digite uma frase:</label>
-        <input type="text" name="frase">
+        <input class="input-text" type="text" name="frase">
         <label for="palavra1">Digite uma palavra:</label>
-        <input type="text" name="palavra1">
+        <input class="input-text" type="text" name="palavra1">
         <label for="palavra2">Digite uma palavra:</label>
-        <input type="text" name="palavra2">
-        <input type="submit" value="Enviar">
+        <input class="input-text" type="text" name="palavra2">
+        <div class="btn-container">
+            <input type="submit" value="Enviar">
+        </div>
     </form>
     <?php
         if(isset($_POST["frase"])){
